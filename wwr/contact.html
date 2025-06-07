@@ -2,23 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Splash White Water Rafting for enquiries, book adventures or to sign up for the newsletter.">
-    <meta name="author" content="Dylan Magumura">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Splash White Water Rafting for enquiries, book adventures or to sign up for the newsletter." />
+    <meta name="author" content="Dylan Magumura" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/contact.css" />
 
     <title>Dylan Magumura Splash White Water Rafting | WDD130 Contact Us</title>
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Splash White Water Rafting">
+        <img src="images/logo.png" alt="Splash White Water Rafting" />
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -28,6 +27,8 @@
     </header>
 
     <main>
+        <h1>Contact Splash White Water Rafting</h1>
+
         <section class="contact-info">
             <h2>Contact Information</h2>
             <p><strong>Address:</strong> 123 Mosiatunya Rd, Victoria Falls, Po box 80439</p>
@@ -40,15 +41,15 @@
             <h2>Our Team</h2>
             <div class="employee-gallery">
                 <figure>
-                    <img src="images/employee1.jpg" alt="Guide Sarah">
+                    <img src="images/employee1.jpg" alt="James - Lead Rafting Guide" />
                     <figcaption>James - Lead Rafting Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee2.jpg" alt="Guide James">
+                    <img src="images/employee2.jpg" alt="Bridget - Safety Coordinator" />
                     <figcaption>Bridget - Safety Coordinator</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee3.webp" alt="Guide Darren">
+                    <img src="images/employee3.webp" alt="Darren - Tour Manager" />
                     <figcaption>Darren - Tour Manager</figcaption>
                 </figure>
             </div>
@@ -58,23 +59,33 @@
             <h2>Send Us a Message</h2>
             <form action="submit-form.php" method="post">
                 <label for="username">Full Name:</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username" required />
 
                 <label for="useremail">Email:</label>
-                <input type="email" id="useremail" name="useremail" required>
+                <input type="email" id="useremail" name="useremail" required />
 
                 <fieldset>
                     <legend>Purpose</legend>
-                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" required />
+                        General Inquiry
+                    </label>
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation" />
+                        Reservation Question
+                    </label>
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion" />
+                        Website Suggestion
+                    </label>
                 </fieldset>
 
                 <label for="usermessage">Message:</label>
                 <textarea id="usermessage" name="usermessage" rows="4" required></textarea>
 
-                <label>
-                    <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe" />
+                    Please subscribe me to the monthly newsletter
                 </label>
 
                 <button type="submit">Send Message</button>
@@ -85,9 +96,9 @@
     <footer>
         <p>© 2025 🌊 Splash White Water Rafting 🌊 Dylan Magumura</p>
         <nav class="socialmedia">
-            <a href="http://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="http://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="http://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="http://facebook.com"><img src="images/facebook.png" alt="Facebook" /></a>
+            <a href="http://twitter.com"><img src="images/twitter.png" alt="Twitter" /></a>
+            <a href="http://instagram.com"><img src="images/instagram.png" alt="Instagram" /></a>
         </nav>
         <p><a href="images/wireframe.png" target="_blank">View Contact Wireframe</a></p>
     </footer>
